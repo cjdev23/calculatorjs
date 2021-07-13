@@ -1,0 +1,96 @@
+*{
+    font-family: 'Fraunces', 'Serif';
+    color: #F7FAFF;
+}
+
+body{
+    margin: 0;
+    background-color: #F7FAFF;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculadora{
+    display: grid;
+    grid-template-columns: repeat(4, 75px);
+    grid-template-rows: 160px repeat(5, 75px);
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 30px;
+    box-shadow: 15px 10px 0px 5px #26272B33;
+}
+
+button{
+    cursor: pointer;
+    margin: 5px;
+    padding: 0;
+    border-radius: 20px;
+    font-size: 1.5em;
+    border: none;
+    background-color: #3d6aff;
+    box-shadow: 5px 5px 10px -3px #3DA5FF, -5px -5px 15px 3px #3DA5FF1f ;
+}
+
+button.col-2{
+    cursor: pointer;
+    margin: 5px;
+    padding: 0;
+    border-radius: 20px;
+    font-size: 1.5em;
+    border: none;
+    background-color: #FF3D3D;
+    box-shadow: 5px 5px 10px -3px #FF3D3D, -5px -5px 15px 3px #FF3D3D1f ;
+}
+
+button:active{
+    background-color: #3328CB;
+}
+
+button.col-2:active{
+    background-color: #c92f2f;
+}
+
+button:focus{
+    outline: none;
+}
+
+button.col-2:focus{
+    outline: none;
+}
+
+.display{
+    grid-column: 1 / -1;
+    padding: 16px ;
+    display: flex;
+    margin: 20px 20px;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: #e7effca2;
+    border-radius: 20px;
+    text-align: right;
+    justify-content: space-between;
+    word-break: break-all;
+    box-shadow: 0px 0px 0px 5px #3DA5FF;
+}
+.col-1{
+    grid-column: span 2; 
+ }
+
+.col-2{
+   grid-column: span 2;
+}
+
+#valor-actual{
+    font-size: 1.8em;
+    color: #26272B;
+}
+
+#valor-anterior{
+    font-size: 2.5em;
+    color: #26272B;
+}
